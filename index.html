@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Struk Pembayaran</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            margin: 20px;
+        }
+        #struk {
+            width: 350px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px dashed #333;
+            background-color: #fdfdfd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2, h4 {
+            text-align: center;
+        }
+        input {
+            width: calc(100% - 30px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            background: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #555;
+        }
+        canvas {
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #333;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Form Struk Pembayaran</h2>
+    <form id="formData">
+        <input type="text" id="idTransaksi" placeholder="ID Transaksi" required>
+        <input type="number" id="hargaAdmin" placeholder="Harga Admin" required>
+        <input type="text" id="nomorTujuan" placeholder="Nomor Tujuan" required>
+        <input type="text" id="namaBarang" placeholder="Nama Barang">
+        <input type="number" id="hargaBarang" placeholder="Harga">
+        <button type="button" onclick="tambahBarang()">Tambah Barang</button>
+    </form>
+
+    <div id="barangList"></div>
+
+    <button onclick="buatStruk()">Buat Struk</button>
+    <button onclick="resetForm()">Reset</button>
+    <button onclick="cetakGambar()">Cetak Gambar</button>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
