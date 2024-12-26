@@ -6,6 +6,7 @@ Website sederhana untuk membuat dan mencetak struk pembayaran digital. Website i
 <img src="https://receipt-generator.flowfalcon.xyz/struk.png" widhth ="250">
 </p>
 </div>
+
 ## 🚀 Fitur
 
 - Pembuatan struk pembayaran digital
@@ -14,6 +15,11 @@ Website sederhana untuk membuat dan mencetak struk pembayaran digital. Website i
 - Ekspor struk ke format gambar
 - Tampilan yang responsif
 - Reset form otomatis
+
+## Live Demo 🌐
+
+Kunjungi Halaman Website Ini
+[Demo Website](https://receipt-generator.flowfalcon.xyz)
 
 ## 💻 Cara Penggunaan
 
